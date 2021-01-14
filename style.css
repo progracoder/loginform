@@ -1,0 +1,111 @@
+
+*{
+	font-family: monospace;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #092756;
+}
+
+.login{
+	width: 340px;
+	height: 540px;
+	border: 1px solid #FFF;
+    border-radius: 40px 100px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.login h1{
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 35px;
+        color: #FFF;
+}
+
+.txtdata{
+	position: relative;
+	margin: 40px 0;
+	border-bottom: 2px solid #CCC;
+}
+
+.txtdata input{
+	border:none;
+	outline: none;
+	width: 100%;
+	background: none;
+	font-size: 18px;
+	height: 32px;
+	color: #FFF; 
+}
+
+.txtdata span:before{
+	content: attr(placeholder-text);
+	position: absolute;
+	font-size: 18px;
+	color: #a5a5a5;
+	top: 50%;
+	transform:translateY(-50%);
+	z-index: -1;
+	transition:.6s;
+        left: 0;
+}
+
+.txtdata span:after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-image: linear-gradient(145deg,#6b6b6b,#b9b8b8,#3160a7);
+	transition:.6s;
+    left: 0;
+    bottom: -2px;
+}
+
+
+.focusClass + span:before{
+	top: -9px;
+}
+
+.focusClass + span:after{
+	width:100%;
+}
+
+.btn{
+	width: 100%;
+	display: block;
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	margin-top: 60px;
+	background-image: linear-gradient(145deg,#6b6b6b,#b9b8b8,#3160a7);
+	color: #FFF;
+	background-size: 220%;
+	font-size: 17px;
+	font-weight: bold;
+	transition:.6s;
+}
+
+.btn:hover{
+	background-position: right;
+}
+
+.createAccount{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 60px;
+        color: #fff;
+}
+
+.createAccount a{
+	text-decoration: none;
+        color: #a5a5a5;
+}
+

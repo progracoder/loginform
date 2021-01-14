@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<form class="login">
+		<h1>Login</h1>
+		<div class="txtdata">
+			<input type="text">
+			<span placeholder-text="username"></span>
+		</div>
+
+		<div class="txtdata">
+			<input type="password">
+			<span placeholder-text="password"></span>
+		</div>
+
+		<input type="submit" class="btn" value="Login">
+		<div class="createAccount">
+			Don't Have Account?
+			<a href="#">Create One</a>
+		</div>
+	</form>
+
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+   <script type="text/javascript">
+    $(".txtdata input").on({
+       focus:function(){ $(this).addClass("focusClass"); },
+       blur:function(){ 
+       		if ($(this).val() == "")
+       		$(this).removeClass("focusClass");
+       }
+    });
+
+
+   </script>
+</body>
+</html>
